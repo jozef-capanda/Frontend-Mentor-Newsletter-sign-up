@@ -2,6 +2,7 @@
   --clr-accent: hsl(4, 100%, 67%);
   --clr-accent-alpha: hsla(4, 100%, 67%, 0.15);
   --clr-slate-grey: #242742;
+  --clr-charcoal-grey: #36384d;
   --clr-grey: hsl(231, 7%, 60%);
   --clr-white: hsl(0, 0%, 100%);
 
@@ -13,7 +14,7 @@ body {
   min-height: 100vh;
   margin-inline: auto;
   font-size: 1rem;
-  color: var(--clr-slate-grey);
+  color: var(--clr-charcoal-grey);
   font-weight: 400;
   line-height: 150%;
   display: grid;
