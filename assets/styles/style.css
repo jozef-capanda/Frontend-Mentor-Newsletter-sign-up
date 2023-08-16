@@ -203,7 +203,7 @@ footer a {
 
 @media (min-width: 43em) {
   body {
-    background-color: var(--clr-slate-grey);
+    background-color: var(--clr-charcoal-grey);
   }
   img {
     border-radius: 1rem;
