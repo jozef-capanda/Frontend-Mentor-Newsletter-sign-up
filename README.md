@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up/)
+- Live Site URL: [Open in New Tab (Ctrl + click)](https://github.com/jozef-capanda/Frontend-Mentor-Newsletter-sign-up)
 
 ## My process
 
