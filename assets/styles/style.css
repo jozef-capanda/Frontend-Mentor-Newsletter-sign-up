@@ -179,9 +179,11 @@ footer a {
   color: var(--clr-accent);
 }
 
-.line-break::after {
-  content: "\a";
-  white-space: pre;
+@media (max-width: 30em) {
+  .line-break::after {
+    content: "\a";
+    white-space: pre;
+  }
 }
 
 @media (min-width: 30em) {
