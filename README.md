@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up/)
-- Live Site URL: [Open in New Tab (Ctrl + click)](https://github.com/jozef-capanda/Frontend-Mentor-Newsletter-sign-up)
+- Live Site URL: [Open in New Tab (Ctrl + click)]([https://github.com/jozef-capanda/Frontend-Mentor-Newsletter-sign-up](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up/))
 
 ## My process
 
