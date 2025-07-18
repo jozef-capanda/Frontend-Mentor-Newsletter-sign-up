@@ -7,7 +7,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Live demo](#live-demo)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -33,10 +33,9 @@ Users should be able to:
 ![](./assets/images/preview-desktop-msg.png)
 ![](./assets/images/preview-mobile.png)
 
-### Links
+### Live demo
 
-- Solution URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up/)
-- Live Site URL: [Open in New Tab (Ctrl + click)](https://github.com/jozef-capanda/Frontend-Mentor-Newsletter-sign-up)
+- Live Site URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up)
 
 ## My process
 
