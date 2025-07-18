@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -12,17 +15,33 @@
       href="./assets/images/favicon-32x32.png"
     />
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- STYLES -->
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/style.css"
+    />
     <!-- SCRIPT -->
-    <script src="./assets/script/script.js" defer></script>
+    <script
+      src="./assets/script/script.js"
+      defer
+    ></script>
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -34,22 +53,45 @@
         <article class="container__content">
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul>
+          <ul role="list">
             <li>Product discovery and building what matters</li>
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-          <form class="form">
+          <form
+            class="form"
+            novalidate
+            aria-describedby="email-error"
+          >
             <div class="flex-group">
-              <label for="email" class="form__label">Email address</label>
-              <span class="error-message">Valid email required</span>
+              <label
+                for="email"
+                class="form__label"
+              >
+                Email address
+              </label>
+              <span
+                id="email-error"
+                class="error-message"
+                aria-live="polite"
+                hidden
+              >
+                Valid email required
+              </span>
             </div>
             <input
-              type="text"
+              id="email"
+              type="email"
               placeholder="email@company.com"
               class="form__input"
+              aria-invalid="false"
             />
-            <button class="btn">Subscribe to monthly newsletter</button>
+            <button
+              class="btn"
+              type="submit"
+            >
+              Subscribe to monthly newsletter
+            </button>
           </form>
         </article>
 
@@ -58,12 +100,21 @@
             media="(min-width:688px)"
             srcset="./assets/images/illustration-sign-up-desktop.svg"
           />
-          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="Illustration of newsletter sign-up"
+          />
         </picture>
       </section>
 
       <!-- Success message start -->
-      <div class="message">
+      <div
+        class="message"
+        role="region"
+        aria-live="polite"
+        aria-label="Subscription success message"
+        hidden
+      >
         <img
           src="./assets/images/icon-success.svg"
           alt="success"
@@ -73,11 +124,20 @@
         <h2 class="message__title">Thanks for subscribing!</h2>
         <p class="message__text">
           A confirmation email has been sent to
-          <span id="spanEmail" class="bold"></span>
+          <span
+            id="spanEmail"
+            class="bold"
+          ></span>
           Please open it and click the button inside to confirm your
           subscription.
         </p>
-        <button id="dismiss" class="btn">Dismiss message</button>
+        <button
+          id="dismiss"
+          class="btn"
+          type="button"
+        >
+          Dismiss message
+        </button>
       </div>
 
       <!-- Success message end -->
@@ -93,7 +153,10 @@
         Frontend Mentor.
       </a>
       Coded by
-      <a href="https://github.com/jozef-capanda" target="_blank">
+      <a
+        href="https://github.com/jozef-capanda"
+        target="_blank"
+      >
         Jozef Capanda.
       </a>
     </footer>

@@ -19,7 +19,6 @@ body {
   line-height: 150%;
   display: grid;
   place-content: center;
-
   padding-bottom: 3rem;
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -30,6 +29,10 @@ body {
   flex-direction: column-reverse;
   background-color: var(--clr-white);
   max-width: 58rem;
+}
+
+.container[hidden] {
+  display: none;
 }
 
 img {
@@ -118,11 +121,15 @@ img {
   padding-bottom: 0.875rem;
   border-radius: 8px;
   border: transparent;
-  background-color: var(--clr-slate-grey);
+  background: linear-gradient(
+    225deg,
+    var(--clr-slate-grey),
+    var(--clr-slate-grey)
+  );
   color: var(--clr-white);
   font-weight: 700;
   width: 100%;
-  transition: background 0.5s;
+  transition: all 0.4s;
 }
 
 .btn:is(:hover, :active) {
@@ -156,14 +163,6 @@ img {
 
 .bold {
   font-weight: 700;
-}
-
-.message {
-  display: none;
-}
-
-.error-message {
-  display: none;
 }
 
 footer {

@@ -1,40 +1,55 @@
 const form = document.querySelector("form");
-const emailInput = document.querySelector("input");
+const emailInput = document.getElementById("email");
 const errorMessage = document.querySelector(".error-message");
 const message = document.querySelector(".message");
 const container = document.querySelector(".container");
 const dismissButton = document.querySelector("#dismiss");
 const spanEmail = document.querySelector("#spanEmail");
 
-const validateEmail = (emailInput) => {
-  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
-    return true;
-  }
-  return false;
-};
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const isEmailValid = validateEmail(emailInput);
+  const email = emailInput.value.trim();
 
-  if (isEmailValid) {
-    spanEmail.innerText = emailInput.value + ".";
-    container.style.display = "none";
-    message.style.display = "grid";
+  if (validateEmail(email)) {
+    hideError();
+    showSuccess(email);
   } else {
-    errorMessage.style.display = "inline-block";
-    emailInput.classList.add("error");
-    emailInput.focus();
+    showError();
   }
 });
 
 dismissButton.addEventListener("click", () => {
-  container.style.display = "flex";
-  message.style.display = "none";
-  errorMessage.style.display = "none";
-  if (emailInput.classList.contains("error")) {
-    emailInput.classList.remove("error");
-  }
-  emailInput.value = "";
-  emailInput.focus();
+  resetForm();
 });
+
+const validateEmail = (email) => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+};
+
+const showError = () => {
+  errorMessage.hidden = false;
+  emailInput.classList.add("error");
+  emailInput.setAttribute("aria-invalid", "true");
+  emailInput.focus();
+};
+
+const hideError = () => {
+  errorMessage.hidden = true;
+  emailInput.classList.remove("error");
+  emailInput.setAttribute("aria-invalid", "false");
+};
+
+const showSuccess = (email) => {
+  spanEmail.innerText = `${email}.`;
+  container.hidden = true;
+  message.hidden = false;
+};
+
+const resetForm = () => {
+  form.reset();
+  hideError();
+  container.hidden = false;
+  message.hidden = true;
+  emailInput.focus();
+};

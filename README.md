@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Open in New Tab (Ctrl + click)](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-solution-o_SQJeaXF_)
-- Live Site URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up/)
+- Solution URL: [Open in New Tab (Ctrl + click)](https://jozef-capanda.github.io/Frontend-Mentor-Newsletter-sign-up/)
+- Live Site URL: [Open in New Tab (Ctrl + click)](https://github.com/jozef-capanda/Frontend-Mentor-Newsletter-sign-up)
 
 ## My process
 
